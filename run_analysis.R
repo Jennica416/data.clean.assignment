@@ -69,3 +69,7 @@ Data1 <- cbind(Subject, Data1)
 Data2 <- cbind(Activity, Data2)
 
 GroupedData <- rbind(Data1, Data2)
+
+##write tidy dataset
+library(utils)
+write.table(GroupedData, file="tidyData.txt", row.name=FALSE)
